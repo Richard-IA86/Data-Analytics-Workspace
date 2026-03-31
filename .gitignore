@@ -1,0 +1,11 @@
+# Ignore the Python virtual environment
+.venv/
+__pycache__/
+
+# Ignore data files
+*.csv
+*.xlsx
+*.parquet
+
+# Notebook checkpoints
+.ipynb_checkpoints/
