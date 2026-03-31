@@ -2,7 +2,17 @@
 
 Este documento sirve como guía paso a paso para asegurar que nuestro trabajo esté siempre organizado, sincronizado y seguro entre nuestro entorno local y la nube.
 
-## 🔄 El Ciclo de Trabajo (Workflow)
+## 🔄 Esquema Rápido del Ciclo
+
+El ciclo de vida de los archivos siempre es:
+`Colab ---> GitHub ---> VS Code ---> GitHub`
+
+Para abrir un archivo siempre es:
+`Colab ---> pestaña GitHub`
+
+*Nota sobre Google Drive:* Nuestro flujo principal **omite** Google Drive para evitar desincronizaciones. Si por algún motivo específico necesitas una copia en Drive, debes subir manualmente el archivo `.ipynb` desde tu pc local (`C:\Dev\Data Analytics\TPX\...`) a tu cuenta de Drive.
+
+## 📝 El Ciclo de Trabajo Detallado
 
 Cada vez que recibamos un nuevo Trabajo Práctico (TP) o actividad, seguiremos este orden:
 
