@@ -1,0 +1,7 @@
+# Dependencias del entorno data_analytics
+# Repositorio: Data-Analytics-Workspace (Grupo POSE)
+# Contenido: ejercicios educativos Python puro (sin librerías externas)
+# Última revisión: 2026-04-01
+
+notebook>=7.0.0
+ipykernel>=6.0.0
