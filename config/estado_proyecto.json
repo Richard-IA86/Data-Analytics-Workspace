@@ -1,0 +1,15 @@
+{
+    "auditoria_qa": [],
+    "desarrollo_local": [
+        {
+            "tareas_pendientes": [
+                "Instalar dependencias del proyecto: pip install -r requirements.txt",
+                "Instalar pre-commit en el entorno: pip install pre-commit",
+                "Configurar los hooks de pre-commit en el repositorio: pre-commit install",
+                "Adoptar el protocolo de scripts temporales indicados en .github/copilot-instructions.md"
+            ],
+            "fecha_creacion": "2026-04-02",
+            "estado": "pendiente"
+        }
+    ]
+}
