@@ -9,3 +9,8 @@ __pycache__/
 
 # Notebook checkpoints
 .ipynb_checkpoints/
+
+# ── Scripts temporales / efímeros (generados por agentes Copilot) ──
+# Usar prefijo _temp_ para scripts one-shot → se eliminan tras uso
+_temp_*.py
+_temp_*.sh
