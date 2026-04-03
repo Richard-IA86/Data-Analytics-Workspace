@@ -1,4 +1,56 @@
 # Aquí iremos guardando las funciones y herramientas de Python
 # que vayamos creando
-def ejemplo_funcion():
+from typing import Dict, List, Optional
+
+
+def ejemplo_funcion() -> None:
     print("¡Herramientas listas!")
+
+
+def es_par(n: int) -> bool:
+    """Retorna True si n es par, False si es impar."""
+    return n % 2 == 0
+
+
+def calcular_media(valores: List[float]) -> float:
+    """Calcula la media aritmética de una lista no vacía."""
+    if not valores:
+        raise ValueError("La lista no puede estar vacía.")
+    return sum(valores) / len(valores)
+
+
+def calcular_mediana(valores: List[float]) -> float:
+    """Calcula la mediana de una lista no vacía."""
+    if not valores:
+        raise ValueError("La lista no puede estar vacía.")
+    ordenados = sorted(valores)
+    n = len(ordenados)
+    mitad = n // 2
+    if n % 2 == 0:
+        return (ordenados[mitad - 1] + ordenados[mitad]) / 2
+    return float(ordenados[mitad])
+
+
+def limpiar_nulos(lista: List[Optional[float]]) -> List[float]:
+    """Elimina valores None de una lista."""
+    return [v for v in lista if v is not None]
+
+
+def contar_frecuencias(lista: list) -> Dict[object, int]:
+    """Cuenta la frecuencia de cada elemento en la lista."""
+    frecuencias: Dict[object, int] = {}
+    for elemento in lista:
+        frecuencias[elemento] = frecuencias.get(elemento, 0) + 1
+    return frecuencias
+
+
+def normalizar(valores: List[float]) -> List[float]:
+    """Normaliza al rango [0, 1] usando min-max scaling."""
+    if not valores:
+        raise ValueError("La lista no puede estar vacía.")
+    minimo = min(valores)
+    maximo = max(valores)
+    if minimo == maximo:
+        return [0.0] * len(valores)
+    rango = maximo - minimo
+    return [(v - minimo) / rango for v in valores]
