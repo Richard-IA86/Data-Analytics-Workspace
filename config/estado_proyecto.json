@@ -1,19 +1,42 @@
 {
-    "auditoria_qa": [],
+    "auditoria_qa": [
+        {
+            "sprint": 8,
+            "fecha": "2026-04-03",
+            "estado": "EN_CURSO",
+            "pipeline": "5/5 APROBADO",
+            "tests_actuales": 0,
+            "hallazgo": "Sin cobertura de tests — Herramientas/mis_funciones.py solo tiene stub",
+            "proxima_accion": "Crear tests en rama qa/cobertura_herramientas (objetivo: min 5 tests)"
+        }
+    ],
     "desarrollo_local": [
         {
-            "tareas_completadas": [
-                "Instalar dependencias del proyecto: pip install -r requirements.txt",
-                "Instalar pre-commit en el entorno: pip install pre-commit",
-                "Configurar los hooks de pre-commit en el repositorio: pre-commit install",
-                "Adoptar el protocolo de scripts temporales indicados en .github/copilot-instructions.md"
-            ],
+            "fecha_ultima_actualizacion": "2026-04-03",
+            "estado": "PENDIENTE_TESTS",
+            "punto_de_partida_manana": "Implementar tests para Herramientas/mis_funciones.py",
             "tareas_pendientes": [
-                "Revisar próximo TP"
+                {
+                    "id": 1,
+                    "titulo": "Cobertura de tests data_analytics",
+                    "prioridad": "Media",
+                    "estado": "Pendiente",
+                    "descripcion": "mis_funciones.py requiere funciones reales y tests. Rama: qa/cobertura_herramientas. Objetivo: min 5-8 tests."
+                },
+                {
+                    "id": 2,
+                    "titulo": "Revisar proximo TP",
+                    "prioridad": "Baja",
+                    "estado": "Pendiente",
+                    "descripcion": "Continuar con el siguiente trabajo practico del curso."
+                }
             ],
-            "fecha_creacion": "2026-04-02",
-            "fecha_ultima_actualizacion": "2026-04-02",
-            "estado": "completado"
+            "tareas_completadas": [
+                "Instalar dependencias del proyecto",
+                "Configurar hooks de pre-commit",
+                "Adoptar protocolo de scripts temporales",
+                "PR #2 mergeado: chore/estado-proyecto-2026-04-02 → main (squash 897634c)"
+            ]
         }
     ]
 }
