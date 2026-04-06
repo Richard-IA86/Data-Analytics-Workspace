@@ -54,3 +54,21 @@ def normalizar(valores: List[float]) -> List[float]:
         return [0.0] * len(valores)
     rango = maximo - minimo
     return [(v - minimo) / rango for v in valores]
+
+
+def calcular_varianza(valores: List[float]) -> float:
+    """Calcula la varianza poblacional de una lista no vacía."""
+    if not valores:
+        raise ValueError("La lista no puede estar vacía.")
+    media = calcular_media(valores)
+    return sum((v - media) ** 2 for v in valores) / len(valores)
+
+
+def calcular_desviacion_estandar(valores: List[float]) -> float:
+    """Calcula la desviación estándar poblacional."""
+    return calcular_varianza(valores) ** 0.5
+
+
+def aplanar_lista(lista: List[List[float]]) -> List[float]:
+    """Aplana una lista de listas en una lista simple."""
+    return [elem for sublista in lista for elem in sublista]

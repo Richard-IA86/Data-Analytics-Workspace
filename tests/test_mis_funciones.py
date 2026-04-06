@@ -6,8 +6,11 @@ Suite: data_analytics — qa/cobertura_herramientas
 import pytest
 
 from Herramientas.mis_funciones import (
+    aplanar_lista,
+    calcular_desviacion_estandar,
     calcular_media,
     calcular_mediana,
+    calcular_varianza,
     contar_frecuencias,
     es_par,
     limpiar_nulos,
@@ -121,3 +124,50 @@ class TestNormalizar:
     def test_valores_negativos(self) -> None:
         resultado = normalizar([-10.0, 0.0, 10.0])
         assert resultado == pytest.approx([0.0, 0.5, 1.0])
+
+
+# ── calcular_varianza ─────────────────────────────────────────
+class TestCalcularVarianza:
+    def test_varianza_valores_uniformes(self) -> None:
+        assert calcular_varianza([2.0, 2.0, 2.0]) == pytest.approx(0.0)
+
+    def test_varianza_lista_simple(self) -> None:
+        # [2, 4, 4, 4, 5, 5, 7, 9] varianza poblacional = 4.0
+        datos = [2.0, 4.0, 4.0, 4.0, 5.0, 5.0, 7.0, 9.0]
+        assert calcular_varianza(datos) == pytest.approx(4.0)
+
+    def test_varianza_lista_vacia_lanza_error(self) -> None:
+        with pytest.raises(ValueError):
+            calcular_varianza([])
+
+    def test_varianza_un_elemento(self) -> None:
+        assert calcular_varianza([5.0]) == pytest.approx(0.0)
+
+
+# ── calcular_desviacion_estandar ──────────────────────────────
+class TestCalcularDesviacionEstandar:
+    def test_desviacion_valores_conocidos(self) -> None:
+        # std de [2, 4, 4, 4, 5, 5, 7, 9] = 2.0
+        datos = [2.0, 4.0, 4.0, 4.0, 5.0, 5.0, 7.0, 9.0]
+        assert calcular_desviacion_estandar(datos) == pytest.approx(2.0)
+
+    def test_desviacion_lista_vacia_lanza_error(self) -> None:
+        with pytest.raises(ValueError):
+            calcular_desviacion_estandar([])
+
+    def test_desviacion_valores_uniformes(self) -> None:
+        resultado = calcular_desviacion_estandar([3.0, 3.0, 3.0])
+        assert resultado == pytest.approx(0.0)
+
+
+# ── aplanar_lista ─────────────────────────────────────────────
+class TestAplanarLista:
+    def test_lista_de_listas(self) -> None:
+        resultado = aplanar_lista([[1.0, 2.0], [3.0, 4.0]])
+        assert resultado == [1.0, 2.0, 3.0, 4.0]
+
+    def test_lista_vacia(self) -> None:
+        assert aplanar_lista([]) == []
+
+    def test_sublistas_vacias(self) -> None:
+        assert aplanar_lista([[], [1.0], []]) == [1.0]
