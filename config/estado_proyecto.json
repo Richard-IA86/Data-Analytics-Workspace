@@ -4,8 +4,8 @@
             "sprint": 13,
             "fecha": "2026-04-05",
             "estado": "PENDIENTE_APROBACION_QA",
-            "pipeline": "28/28 tests VERDE — black+flake8+mypy OK",
-            "accion_destacada": "Sprint 13: 3 nuevas funciones estadísticas (calcular_varianza, calcular_desviacion_estandar, aplanar_lista); suite ampliada de 28 a 38 tests; config QA completa (black, flake8, mypy, pyproject.toml, setup.cfg)",
+            "pipeline": "38/38 tests VERDE — black+flake8+mypy OK",
+            "accion_destacada": "Sprint 13: 3 nuevas funciones estadísticas (calcular_varianza, calcular_desviacion_estandar, aplanar_lista); suite ampliada de 28 a 38 tests (+10 nuevos tests); pipeline QA completo sin errores; config ya establecida desde Sprint anterior (black, flake8, mypy, pyproject.toml, setup.cfg)",
             "hallazgos": [],
             "proxima_accion": "Revisión Ojo de Sauron"
         }
