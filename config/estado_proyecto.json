@@ -3,17 +3,18 @@
         {
             "sprint": 13,
             "fecha": "2026-04-05",
-            "estado": "PENDIENTE_APROBACION_QA",
+            "estado": "APROBADO_POR_QA",
             "pipeline": "38/38 tests VERDE — black+flake8+mypy OK",
-            "accion_destacada": "Sprint 13: 3 nuevas funciones estadísticas (calcular_varianza, calcular_desviacion_estandar, aplanar_lista); suite ampliada de 28 a 38 tests (+10 nuevos tests); pipeline QA completo sin errores; config ya establecida desde Sprint anterior (black, flake8, mypy, pyproject.toml, setup.cfg)",
-            "hallazgos": [],
-            "proxima_accion": "Revisión Ojo de Sauron"
+            "accion_destacada": "Sprint 13: 3 nuevas funciones estadísticas (calcular_varianza, calcular_desviacion_estandar, aplanar_lista) + suite ampliada 28→38 tests",
+            "nota_proteccion_ramas": "require-pull-request desmarcado por el dev para commits directos a main durante Sprint 13",
+            "hallazgos": ["repo sin carpeta docs/ — pymarkdown omitido (no bloqueante)"],
+            "proxima_accion": "Avanzar TP3 del curso — sin deuda técnica activa"
         }
     ],
     "desarrollo_local": [
         {
             "fecha_ultima_actualizacion": "2026-04-05",
-            "estado": "PENDIENTE_APROBACION_QA",
+            "estado": "APROBADO_POR_QA",
             "tareas_completadas": [
                 "Instalar dependencias del proyecto",
                 "Configurar hooks de pre-commit",
