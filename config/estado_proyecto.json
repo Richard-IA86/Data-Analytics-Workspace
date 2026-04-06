@@ -1,41 +1,44 @@
 {
     "auditoria_qa": [
         {
-            "sprint": 8,
-            "fecha": "2026-04-03",
-            "estado": "EN_CURSO",
-            "pipeline": "5/5 APROBADO",
-            "tests_actuales": 0,
-            "hallazgo": "Sin cobertura de tests — Herramientas/mis_funciones.py solo tiene stub",
-            "proxima_accion": "Crear tests en rama qa/cobertura_herramientas (objetivo: min 5 tests)"
+            "sprint": 13,
+            "fecha": "2026-04-05",
+            "estado": "PENDIENTE_APROBACION_QA",
+            "pipeline": "28/28 tests VERDE — black+flake8+mypy OK",
+            "accion_destacada": "Sprint 13: 3 nuevas funciones estadísticas (calcular_varianza, calcular_desviacion_estandar, aplanar_lista); suite ampliada de 28 a 38 tests; config QA completa (black, flake8, mypy, pyproject.toml, setup.cfg)",
+            "hallazgos": [],
+            "proxima_accion": "Revisión Ojo de Sauron"
         }
     ],
     "desarrollo_local": [
         {
-            "fecha_ultima_actualizacion": "2026-04-03",
-            "estado": "PENDIENTE_TESTS",
-            "punto_de_partida_manana": "Implementar tests para Herramientas/mis_funciones.py",
-            "tareas_pendientes": [
-                {
-                    "id": 1,
-                    "titulo": "Cobertura de tests data_analytics",
-                    "prioridad": "Media",
-                    "estado": "Pendiente",
-                    "descripcion": "mis_funciones.py requiere funciones reales y tests. Rama: qa/cobertura_herramientas. Objetivo: min 5-8 tests."
-                },
-                {
-                    "id": 2,
-                    "titulo": "Revisar proximo TP",
-                    "prioridad": "Baja",
-                    "estado": "Pendiente",
-                    "descripcion": "Continuar con el siguiente trabajo practico del curso."
-                }
-            ],
+            "fecha_ultima_actualizacion": "2026-04-05",
+            "estado": "PENDIENTE_APROBACION_QA",
             "tareas_completadas": [
                 "Instalar dependencias del proyecto",
                 "Configurar hooks de pre-commit",
                 "Adoptar protocolo de scripts temporales",
-                "PR #2 mergeado: chore/estado-proyecto-2026-04-02 → main (squash 897634c)"
+                "PR #2 mergeado: chore/estado-proyecto-2026-04-02 → main",
+                "Suite pytest inicial: 28 tests para 6 funciones (es_par, calcular_media, calcular_mediana, limpiar_nulos, contar_frecuencias, normalizar)",
+                "Config QA: black, flake8, mypy, pyproject.toml, setup.cfg, markdownlint.json",
+                "Sprint 13: calcular_varianza, calcular_desviacion_estandar, aplanar_lista + tests",
+                "Sprint 13: suite ampliada a 38 tests — estado_proyecto.json actualizado"
+            ],
+            "tareas_pendientes": [
+                {
+                    "id": 1,
+                    "titulo": "Avanzar TP3 del curso",
+                    "prioridad": "Media",
+                    "estado": "Pendiente",
+                    "descripcion": "Continuar con TP3/Ejercicio_Practico.ipynb según el programa del curso."
+                },
+                {
+                    "id": 2,
+                    "titulo": "Cobertura de notebooks TP1/TP2/TP3",
+                    "prioridad": "Baja",
+                    "estado": "Pendiente",
+                    "descripcion": "Revisar y completar los notebooks de trabajos prácticos."
+                }
             ]
         }
     ]
