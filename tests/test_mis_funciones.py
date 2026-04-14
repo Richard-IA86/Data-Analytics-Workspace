@@ -11,9 +11,11 @@ from Herramientas.mis_funciones import (
     calcular_media,
     calcular_mediana,
     calcular_varianza,
+    concatena_info,
     contar_frecuencias,
     es_par,
     limpiar_nulos,
+    multiplicar,
     normalizar,
 )
 
@@ -171,3 +173,40 @@ class TestAplanarLista:
 
     def test_sublistas_vacias(self) -> None:
         assert aplanar_lista([[], [1.0], []]) == [1.0]
+
+
+# ── multiplicar ───────────────────────────────────────────────
+class TestMultiplicar:
+    def test_enteros_positivos(self) -> None:
+        assert multiplicar(3, 4) == 12
+
+    def test_resultado_negativo(self) -> None:
+        assert multiplicar(-2, 6) == -12
+
+    def test_con_decimal(self) -> None:
+        assert multiplicar(0.5, 8) == pytest.approx(4.0)
+
+    def test_por_cero(self) -> None:
+        assert multiplicar(7, 0) == 0
+
+
+# ── concatena_info ────────────────────────────────────────────
+class TestConcatenaInfo:
+    def test_solo_nombre(self) -> None:
+        assert concatena_info("Ana") == "Nombre: Ana"
+
+    def test_un_kwarg(self) -> None:
+        resultado = concatena_info("Ana", edad=35)
+        assert resultado == "Nombre: Ana | Edad: 35"
+
+    def test_multiples_kwargs(self) -> None:
+        resultado = concatena_info(
+            "Carlos", ocupacion="Analista", empresa="SynthData"
+        )
+        assert "Nombre: Carlos" in resultado
+        assert "Ocupacion: Analista" in resultado
+        assert "Empresa: SynthData" in resultado
+
+    def test_clave_capitalizada(self) -> None:
+        resultado = concatena_info("Maria", ciudad="Rosario")
+        assert "Ciudad: Rosario" in resultado

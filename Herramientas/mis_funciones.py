@@ -72,3 +72,16 @@ def calcular_desviacion_estandar(valores: List[float]) -> float:
 def aplanar_lista(lista: List[List[float]]) -> List[float]:
     """Aplana una lista de listas en una lista simple."""
     return [elem for sublista in lista for elem in sublista]
+
+
+def multiplicar(a: float, b: float) -> float:
+    """Retorna el producto de dos números."""
+    return a * b
+
+
+def concatena_info(nombre: str, **kwargs: object) -> str:
+    """Combina un nombre con pares clave-valor en un string."""
+    partes = [f"Nombre: {nombre}"]
+    for clave, valor in kwargs.items():
+        partes.append(f"{clave.capitalize()}: {valor}")
+    return " | ".join(partes)
