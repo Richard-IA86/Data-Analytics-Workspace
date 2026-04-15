@@ -17,6 +17,10 @@
     },
     "md041": {
       "enabled": false
+    },
+    "md024": {
+      "enabled": true,
+      "allow_different_nesting": true
     }
   }
 }
