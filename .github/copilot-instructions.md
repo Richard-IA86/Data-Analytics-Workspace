@@ -133,7 +133,8 @@ También actualizar (retrocompatibilidad):
 Luego:
 
 ```bash
-git add config/estado_proyecto.json
+git status
+git add -A
 git commit -m "chore(jornada): cierre YYYY-MM-DD"
 git push
 ```
