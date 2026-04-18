@@ -55,25 +55,25 @@
                     "estado": "Pendiente",
                     "descripcion": "Revisar y completar los notebooks de trabajos prácticos según decisión D2 (retroadaptación o solo futuros)."
                 }
-            ],
-            "jornada": {
-                "fin": {
-                    "fecha": "2026-04-17",
-                    "tareas_completadas": [
-                        "Inicio de jornada: git pull — 4 commits descargados (copilot-instructions.md, markdownlint.json, clase-3.md, clase-4.md)",
-                        "Análisis estructural completo de docs/modelos (9 notebooks) + TPs entregados + consignas",
-                        "Identificación del patrón canónico de presentación de ejercicios",
-                        "Creación del informe QA: docs/QA_propuesta_presentacion_ejercicios.md con template, reglas y 5 decisiones pendientes"
-                    ],
-                    "tareas_pendientes_manana": [
-                        "Responder decisiones D1-D5 del informe QA para aprobar el procedimiento",
-                        "Crear docs/procedimiento_presentacion_ejercicios.md (post-aprobación)",
-                        "Aplicar template a TP4/Actividad_4.ipynb (post-aprobación)"
-                    ],
-                    "notas_qa": "Sin cambios en código Python ni tests. Pipeline intacto. Se creó únicamente un archivo .md de análisis en docs/. Informe listo para revisión QA — nada para ejecutar hasta recibir aprobación en D1-D5.",
-                    "estado_pipeline": "VERDE"
-                }
-            }
+            ]
         }
-    ]
+    ],
+    "jornada": {
+        "fin": {
+            "fecha": "2026-04-17",
+            "tareas_completadas": [
+                "Inicio de jornada: git pull — 4 commits descargados (copilot-instructions.md, markdownlint.json, clase-3.md, clase-4.md)",
+                "Análisis estructural completo de docs/modelos (9 notebooks) + TPs entregados + consignas",
+                "Identificación del patrón canónico de presentación de ejercicios",
+                "Creación del informe QA: docs/QA_propuesta_presentacion_ejercicios.md con template, reglas y 5 decisiones pendientes"
+            ],
+            "tareas_pendientes_manana": [
+                "Responder decisiones D1-D5 del informe QA para aprobar el procedimiento",
+                "Crear docs/procedimiento_presentacion_ejercicios.md (post-aprobación)",
+                "Aplicar template a TP4/Actividad_4.ipynb (post-aprobación)"
+            ],
+            "notas_qa": "Sin cambios en código Python ni tests. Pipeline intacto. Se creó únicamente un archivo .md de análisis en docs/. Informe listo para revisión QA — nada para ejecutar hasta recibir aprobación en D1-D5.",
+            "estado_pipeline": "VERDE"
+        }
+    }
 }
