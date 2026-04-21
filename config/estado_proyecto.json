@@ -13,9 +13,9 @@
     ],
     "desarrollo_local": [
         {
-            "fecha_ultima_actualizacion": "2026-04-17",
+            "fecha_ultima_actualizacion": "2026-04-21",
             "estado": "APROBADO_POR_QA",
-            "punto_de_partida_manana": "Esperar aprobación QA informe procedimiento (D1-D5) y luego ejecutar template en TP4",
+            "punto_de_partida_manana": "Sin deuda activa — procedimiento aprobado, TP4 al estándar canónico, pipeline VERDE 46/46",
             "tareas_completadas": [
                 "Instalar dependencias del proyecto",
                 "Configurar hooks de pre-commit",
@@ -31,46 +31,48 @@
                     "id": 1,
                     "titulo": "Aprobación QA — Procedimiento presentación ejercicios",
                     "prioridad": "Alta",
-                    "estado": "Pendiente",
-                    "descripcion": "Revisar docs/QA_propuesta_presentacion_ejercicios.md y responder decisiones D1-D5 para desbloquear implementación del template."
+                    "estado": "Completado",
+                    "descripcion": "Decisiones D1-D5 aprobadas el 2026-04-21."
                 },
                 {
                     "id": 2,
                     "titulo": "Crear procedimiento definitivo post-aprobación",
                     "prioridad": "Alta",
-                    "estado": "Bloqueado por D1-D5",
-                    "descripcion": "Crear docs/procedimiento_presentacion_ejercicios.md con el procedimiento aprobado por QA."
+                    "estado": "Completado",
+                    "descripcion": "Creado docs/procedimiento_presentacion_ejercicios.md el 2026-04-21."
                 },
                 {
                     "id": 3,
                     "titulo": "Aplicar template a TP4",
                     "prioridad": "Media",
-                    "estado": "Bloqueado por D1-D5",
-                    "descripcion": "Reformatear TP4/Actividad_4.ipynb siguiendo el procedimiento aprobado."
+                    "estado": "Completado",
+                    "descripcion": "TP4/Actividad_4.ipynb actualizado con Objetivo textual (D5) el 2026-04-21."
                 },
                 {
                     "id": 4,
                     "titulo": "Cobertura de notebooks TP1/TP2/TP3",
                     "prioridad": "Baja",
-                    "estado": "Pendiente",
-                    "descripcion": "Revisar y completar los notebooks de trabajos prácticos según decisión D2 (retroadaptación o solo futuros)."
+                    "estado": "No aplica",
+                    "descripcion": "D2 aprobado: solo futuros. TP1/TP2/TP3 no se retroadaptan."
                 }
             ]
         }
     ],
     "jornada": {
         "fin": {
-            "fecha": "2026-04-20",
+            "fecha": "2026-04-21",
             "tareas_completadas": [
-                "Refactoring TP1 (PrimeraPractica.ipynb): header canónico Clase 01, badge URL corregida, ### Ejercicio 1/2 con # a., celdas informales eliminadas",
-                "Refactoring TP2 (Actividad_2_Repaso_en_Python.ipynb): header canónico Clase 02, badge URL corregida, headings con espacios corregidos, ### Ejercicio 1/2 con # a., celdas expositivas redundantes eliminadas",
-                "Refactoring TP4 (Actividad_4.ipynb): header canónico Clase 04 con Mentor Matías y Mentor Luis, acentos corregidos (Identificación/Exploración/fisiológico), celda subtítulo duplicada eliminada",
-                "Commit 94aefe6 pusheado: refactor(TPs) apply canonical structure to TP1, TP2, TP4"
+                "Inicio de jornada: git pull — 5 commits descargados (copilot-instructions.md, TP1, TP2, TP4, estado_proyecto.json)",
+                "Aprobación QA decisiones D1-D5 del informe de presentación de ejercicios",
+                "Creado docs/procedimiento_presentacion_ejercicios.md con procedimiento definitivo",
+                "docs/QA_propuesta_presentacion_ejercicios.md actualizado a APROBADO POR QA",
+                "TP4/Actividad_4.ipynb: campo Objetivo: alineado textualmente con consigna oficial (D5)",
+                "config/estado_proyecto.json: tareas 1-4 cerradas (todas completadas)"
             ],
             "tareas_pendientes_manana": [
-                "Sin deuda activa en data_analytics — pipeline VERDE, TPs al estándar canónico"
+                "Sin deuda técnica activa — pipeline VERDE, procedimiento aprobado, TP4 al estándar canónico"
             ],
-            "notas_qa": "Refactoring aplicado directamente sobre JSON de notebooks vía python3 (edit_notebook_file no persiste en disco). TP3 es la referencia canónica — sin cambios. 348 inserciones / 498 eliminaciones.",
+            "notas_qa": "Sin cambios en código Python ni tests. 46/46 tests VERDE. Sprint de aprobación QA completo: D1-D5 aceptadas, procedimiento documentado, TP4 alineado.",
             "estado_pipeline": "VERDE"
         }
     }

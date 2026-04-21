@@ -1,9 +1,9 @@
 # QA — Propuesta: Procedimiento de Presentación de Ejercicios
 
 **Fecha:** 2026-04-17
-**Estado:** PENDIENTE DE APROBACIÓN
+**Estado:** APROBADO POR QA — 2026-04-21
 **Autor:** GitHub Copilot (análisis estructural)
-**Revisado por:** — (pendiente)
+**Revisado por:** Richard (desarrollador) — 2026-04-21
 
 ---
 
@@ -202,11 +202,11 @@ Cuando existe un `.md` de consigna en `docs/`:
 
 | # | Pregunta | Opciones |
 |---|---|---|
-| D1 | ¿Se acepta la jerarquía H1 → H2 (`##`) → H3 (`###`) propuesta? | Sí / No / Ajustar |
-| D2 | ¿Los TPs ya entregados (TP1, TP2) se retroadaptan o solo aplica a TP4+? | Solo futuros / Retroadaptar todos / Retroadaptar TP2 |
-| D3 | ¿Dónde vive el procedimiento definitivo? | `docs/` / `config/` / `README.md` |
-| D4 | ¿El campo `**Mentor:**` es obligatorio o solo cuando la consigna lo indica? | Siempre / Solo cuando hay consigna |
-| D5 | ¿El `Objetivo:` debe coincidir textualmente con la consigna oficial? | Textual / Libre / Resumen propio |
+| D1 | ¿Se acepta la jerarquía H1 → H2 (`##`) → H3 (`###`) propuesta? | ✅ **Sí** |
+| D2 | ¿Los TPs ya entregados (TP1, TP2) se retroadaptan o solo aplica a TP4+? | ✅ **Solo futuros** |
+| D3 | ¿Dónde vive el procedimiento definitivo? | ✅ **`docs/`** |
+| D4 | ¿El campo `**Mentor:**` es obligatorio o solo cuando la consigna lo indica? | ✅ **Siempre** |
+| D5 | ¿El `Objetivo:` debe coincidir textualmente con la consigna oficial? | ✅ **Textual** |
 
 ---
 
