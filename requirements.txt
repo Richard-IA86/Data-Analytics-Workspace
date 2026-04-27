@@ -4,5 +4,5 @@
 # Última revisión: 2026-04-01
 
 notebook>=7.0.0
-ipykernel>=6.0.0
+ipykernel>=7.2.0
 openpyxl>=3.1.0
