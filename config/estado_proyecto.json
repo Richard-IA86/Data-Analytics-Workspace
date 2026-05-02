@@ -7,15 +7,17 @@
             "pipeline": "38/38 tests VERDE — black+flake8+mypy OK",
             "accion_destacada": "Sprint 13: 3 nuevas funciones estadísticas (calcular_varianza, calcular_desviacion_estandar, aplanar_lista) + suite ampliada 28→38 tests",
             "nota_proteccion_ramas": "require-pull-request desmarcado por el dev para commits directos a main durante Sprint 13",
-            "hallazgos": ["repo sin carpeta docs/ — pymarkdown omitido (no bloqueante)"],
+            "hallazgos": [
+                "repo sin carpeta docs/ — pymarkdown omitido (no bloqueante)"
+            ],
             "proxima_accion": "Avanzar TP3 del curso — sin deuda técnica activa"
         }
     ],
     "desarrollo_local": [
         {
-            "fecha_ultima_actualizacion": "2026-04-21",
+            "fecha_ultima_actualizacion": "2026-05-02",
             "estado": "APROBADO_POR_QA",
-            "punto_de_partida_manana": "Sin deuda activa — procedimiento aprobado, TP4 al estándar canónico, pipeline VERDE 46/46",
+            "punto_de_partida_manana": "Retomar según el cierre automático",
             "tareas_completadas": [
                 "Instalar dependencias del proyecto",
                 "Configurar hooks de pre-commit",
@@ -55,24 +57,21 @@
                     "estado": "No aplica",
                     "descripcion": "D2 aprobado: solo futuros. TP1/TP2/TP3 no se retroadaptan."
                 }
-            ]
+            ],
+            "fecha_actualizacion": "2026-05-02"
         }
     ],
     "jornada": {
         "fin": {
-            "fecha": "2026-04-21",
+            "fecha": "2026-05-02",
             "tareas_completadas": [
-                "Inicio de jornada: git pull — 5 commits descargados (copilot-instructions.md, TP1, TP2, TP4, estado_proyecto.json)",
-                "Aprobación QA decisiones D1-D5 del informe de presentación de ejercicios",
-                "Creado docs/procedimiento_presentacion_ejercicios.md con procedimiento definitivo",
-                "docs/QA_propuesta_presentacion_ejercicios.md actualizado a APROBADO POR QA",
-                "TP4/Actividad_4.ipynb: campo Objetivo: alineado textualmente con consigna oficial (D5)",
-                "config/estado_proyecto.json: tareas 1-4 cerradas (todas completadas)"
+                "Ejecución de sincronización de jornada",
+                "Actualización de estado_proyecto.json"
             ],
             "tareas_pendientes_manana": [
-                "Sin deuda técnica activa — pipeline VERDE, procedimiento aprobado, TP4 al estándar canónico"
+                "Reanudación de los sprints en curso"
             ],
-            "notas_qa": "Sin cambios en código Python ni tests. 46/46 tests VERDE. Sprint de aprobación QA completo: D1-D5 aceptadas, procedimiento documentado, TP4 alineado.",
+            "notas_qa": "Cierre de jornada automático de la IA.",
             "estado_pipeline": "VERDE"
         }
     }
