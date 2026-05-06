@@ -1,9 +1,12 @@
 {
+    "schema_version": "1.0",
+    "repo": "data_analytics",
+    "ultima_actualizacion": "2026-05-06",
     "auditoria_qa": [
         {
             "sprint": 13,
             "fecha": "2026-04-05",
-            "estado": "APROBADO_POR_QA",
+            "resultado": "APROBADO",
             "pipeline": "38/38 tests VERDE — black+flake8+mypy OK",
             "accion_destacada": "Sprint 13: 3 nuevas funciones estadísticas (calcular_varianza, calcular_desviacion_estandar, aplanar_lista) + suite ampliada 28→38 tests",
             "nota_proteccion_ramas": "require-pull-request desmarcado por el dev para commits directos a main durante Sprint 13",
@@ -13,10 +16,7 @@
             "proxima_accion": "Avanzar TP3 del curso — sin deuda técnica activa"
         }
     ],
-    "desarrollo_local": [
-        {
-            "fecha_ultima_actualizacion": "2026-05-02",
-            "estado": "APROBADO_POR_QA",
+    "desarrollo_local": {
             "punto_de_partida_manana": "Retomar según el cierre automático",
             "tareas_completadas": [
                 "Instalar dependencias del proyecto",
@@ -29,38 +29,13 @@
                 "Sprint 13: suite ampliada a 38 tests — estado_proyecto.json actualizado"
             ],
             "tareas_pendientes": [
-                {
-                    "id": 1,
-                    "titulo": "Aprobación QA — Procedimiento presentación ejercicios",
-                    "prioridad": "Alta",
-                    "estado": "Completado",
-                    "descripcion": "Decisiones D1-D5 aprobadas el 2026-04-21."
-                },
-                {
-                    "id": 2,
-                    "titulo": "Crear procedimiento definitivo post-aprobación",
-                    "prioridad": "Alta",
-                    "estado": "Completado",
-                    "descripcion": "Creado docs/procedimiento_presentacion_ejercicios.md el 2026-04-21."
-                },
-                {
-                    "id": 3,
-                    "titulo": "Aplicar template a TP4",
-                    "prioridad": "Media",
-                    "estado": "Completado",
-                    "descripcion": "TP4/Actividad_4.ipynb actualizado con Objetivo textual (D5) el 2026-04-21."
-                },
-                {
-                    "id": 4,
-                    "titulo": "Cobertura de notebooks TP1/TP2/TP3",
-                    "prioridad": "Baja",
-                    "estado": "No aplica",
-                    "descripcion": "D2 aprobado: solo futuros. TP1/TP2/TP3 no se retroadaptan."
-                }
+                "Aprobación QA — Procedimiento presentación ejercicios (Completado — D1-D5 aprobadas el 2026-04-21)",
+                "Crear procedimiento definitivo post-aprobación (Completado — docs/procedimiento_presentacion_ejercicios.md el 2026-04-21)",
+                "Aplicar template a TP4 (Completado — TP4/Actividad_4.ipynb actualizado el 2026-04-21)",
+                "Cobertura de notebooks TP1/TP2/TP3 (No aplica — D2: solo futuros, TP1/TP2/TP3 no se retroadaptan)"
             ],
             "fecha_actualizacion": "2026-05-02"
-        }
-    ],
+    },
     "jornada": {
         "fin": {
             "fecha": "2026-05-02",
